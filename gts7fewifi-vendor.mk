@@ -15,6 +15,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/gts7fewifi/proprietary/vendor/etc/audconf/OPEN/Speaker_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/OPEN/Speaker_cal.acdb \
     vendor/samsung/gts7fewifi/proprietary/vendor/etc/audconf/OPEN/workspaceFile.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/OPEN/workspaceFile.qwsp \
     vendor/samsung/gts7fewifi/proprietary/vendor/etc/qdcm_calib_data_ss_dsi_panel_FT8203_TS124QDM_WQXGA.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_ss_dsi_panel_FT8203_TS124QDM_WQXGA.xml \
+    vendor/samsung/gts7fewifi/proprietary/vendor/etc/qdcm_calib_data_ss_dsi_panel_HX83102_TV104WUM_WUXGA.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_ss_dsi_panel_HX83102_TV104WUM_WUXGA.xml \
     vendor/samsung/gts7fewifi/proprietary/vendor/etc/qdcm_calib_data_ss_dsi_panel_HX83121_PPC357DB11_WQXGA.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_ss_dsi_panel_HX83121_PPC357DB11_WQXGA.xml \
     vendor/samsung/gts7fewifi/proprietary/vendor/etc/sensors/config/bridge_driver_2.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/bridge_driver_2.json \
     vendor/samsung/gts7fewifi/proprietary/vendor/etc/sensors/config/kodiak_ak991x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kodiak_ak991x_0.json \
@@ -26,52 +27,65 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/gts7fewifi/proprietary/vendor/etc/sensors/config/veml3235_1.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/veml3235_1.json \
     vendor/samsung/gts7fewifi/proprietary/vendor/etc/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf \
     vendor/samsung/gts7fewifi/proprietary/vendor/firmware/bt_nvm_loading.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/bt_nvm_loading.xml \
+    vendor/samsung/gts7fewifi/proprietary/vendor/firmware/cs35l45-dsp1-spk-prot-calib.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/cs35l45-dsp1-spk-prot-calib.bin \
+    vendor/samsung/gts7fewifi/proprietary/vendor/firmware/cs35l45-dsp1-spk-prot.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/cs35l45-dsp1-spk-prot.bin \
     vendor/samsung/gts7fewifi/proprietary/vendor/firmware/cs35l45-dsp1-spk-prot.wmfw:$(TARGET_COPY_OUT_VENDOR)/firmware/cs35l45-dsp1-spk-prot.wmfw \
     vendor/samsung/gts7fewifi/proprietary/vendor/firmware/dax_param.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/dax_param.bin \
     vendor/samsung/gts7fewifi/proprietary/vendor/firmware/dbmd8_va_asrp_fw.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/dbmd8_va_asrp_fw.bin \
     vendor/samsung/gts7fewifi/proprietary/vendor/firmware/dbmd8_va_fw.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/dbmd8_va_fw.bin \
     vendor/samsung/gts7fewifi/proprietary/vendor/firmware/epen/w9021_gts7xllite.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/epen/w9021_gts7xllite.bin \
-    vendor/samsung/gts7fewifi/proprietary/vendor/firmware/evass-lt.b11:$(TARGET_COPY_OUT_VENDOR)/firmware/evass-lt.b11 \
-    vendor/samsung/gts7fewifi/proprietary/vendor/firmware/evass-lt.b12:$(TARGET_COPY_OUT_VENDOR)/firmware/evass-lt.b12 \
-    vendor/samsung/gts7fewifi/proprietary/vendor/firmware/evass-lt.b13:$(TARGET_COPY_OUT_VENDOR)/firmware/evass-lt.b13 \
-    vendor/samsung/gts7fewifi/proprietary/vendor/firmware/evass-lt.b14:$(TARGET_COPY_OUT_VENDOR)/firmware/evass-lt.b14 \
-    vendor/samsung/gts7fewifi/proprietary/vendor/firmware/evass-lt.b15:$(TARGET_COPY_OUT_VENDOR)/firmware/evass-lt.b15 \
-    vendor/samsung/gts7fewifi/proprietary/vendor/firmware/evass-lt.b16:$(TARGET_COPY_OUT_VENDOR)/firmware/evass-lt.b16 \
-    vendor/samsung/gts7fewifi/proprietary/vendor/firmware/evass-lt.b17:$(TARGET_COPY_OUT_VENDOR)/firmware/evass-lt.b17 \
-    vendor/samsung/gts7fewifi/proprietary/vendor/firmware/evass-lt.b18:$(TARGET_COPY_OUT_VENDOR)/firmware/evass-lt.b18 \
-    vendor/samsung/gts7fewifi/proprietary/vendor/firmware/evass-lt.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/evass-lt.mbn \
-    vendor/samsung/gts7fewifi/proprietary/vendor/firmware/evass-lt.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/evass-lt.mdt \
-    vendor/samsung/gts7fewifi/proprietary/vendor/firmware/evass.b11:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.b11 \
-    vendor/samsung/gts7fewifi/proprietary/vendor/firmware/evass.b12:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.b12 \
-    vendor/samsung/gts7fewifi/proprietary/vendor/firmware/evass.b13:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.b13 \
-    vendor/samsung/gts7fewifi/proprietary/vendor/firmware/evass.b14:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.b14 \
-    vendor/samsung/gts7fewifi/proprietary/vendor/firmware/evass.b15:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.b15 \
-    vendor/samsung/gts7fewifi/proprietary/vendor/firmware/evass.b16:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.b16 \
-    vendor/samsung/gts7fewifi/proprietary/vendor/firmware/evass.b17:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.b17 \
-    vendor/samsung/gts7fewifi/proprietary/vendor/firmware/evass.b18:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.b18 \
-    vendor/samsung/gts7fewifi/proprietary/vendor/firmware/evass.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.mbn \
-    vendor/samsung/gts7fewifi/proprietary/vendor/firmware/evass.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.mdt \
     vendor/samsung/gts7fewifi/proprietary/vendor/firmware/keyboard_stm/stm32_gts7llite.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/keyboard_stm/stm32_gts7llite.bin \
     vendor/samsung/gts7fewifi/proprietary/vendor/firmware/tsp_focaltech/ft8203_gts7xllite.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/tsp_focaltech/ft8203_gts7xllite.bin \
     vendor/samsung/gts7fewifi/proprietary/recovery/root/vendor/firmware/tsp_focaltech/ft8203_gts7xllite.bin:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/tsp_focaltech/ft8203_gts7xllite.bin \
     vendor/samsung/gts7fewifi/proprietary/vendor/firmware/tsp_himax/hx83121a_gts7xllite.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/tsp_himax/hx83121a_gts7xllite.bin \
     vendor/samsung/gts7fewifi/proprietary/recovery/root/vendor/firmware/tsp_himax/hx83121a_gts7xllite.bin:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/tsp_himax/hx83121a_gts7xllite.bin \
-    vendor/samsung/gts7fewifi/proprietary/vendor/firmware/wpss.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/wpss.b00 \
-    vendor/samsung/gts7fewifi/proprietary/vendor/firmware/wpss.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/wpss.b01 \
-    vendor/samsung/gts7fewifi/proprietary/vendor/firmware/wpss.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/wpss.b02 \
-    vendor/samsung/gts7fewifi/proprietary/vendor/firmware/wpss.b03:$(TARGET_COPY_OUT_VENDOR)/firmware/wpss.b03 \
-    vendor/samsung/gts7fewifi/proprietary/vendor/firmware/wpss.b04:$(TARGET_COPY_OUT_VENDOR)/firmware/wpss.b04 \
-    vendor/samsung/gts7fewifi/proprietary/vendor/firmware/wpss.b05:$(TARGET_COPY_OUT_VENDOR)/firmware/wpss.b05 \
-    vendor/samsung/gts7fewifi/proprietary/vendor/firmware/wpss.b06:$(TARGET_COPY_OUT_VENDOR)/firmware/wpss.b06 \
-    vendor/samsung/gts7fewifi/proprietary/vendor/firmware/wpss.b07:$(TARGET_COPY_OUT_VENDOR)/firmware/wpss.b07 \
-    vendor/samsung/gts7fewifi/proprietary/vendor/firmware/wpss.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/wpss.mdt \
-    vendor/samsung/gts7fewifi/proprietary/vendor/firmware/yupik_ipa_fws.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/yupik_ipa_fws.b00 \
-    vendor/samsung/gts7fewifi/proprietary/vendor/firmware/yupik_ipa_fws.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/yupik_ipa_fws.b01 \
-    vendor/samsung/gts7fewifi/proprietary/vendor/firmware/yupik_ipa_fws.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/yupik_ipa_fws.b02 \
-    vendor/samsung/gts7fewifi/proprietary/vendor/firmware/yupik_ipa_fws.b03:$(TARGET_COPY_OUT_VENDOR)/firmware/yupik_ipa_fws.b03 \
-    vendor/samsung/gts7fewifi/proprietary/vendor/firmware/yupik_ipa_fws.b04:$(TARGET_COPY_OUT_VENDOR)/firmware/yupik_ipa_fws.b04 \
-    vendor/samsung/gts7fewifi/proprietary/vendor/firmware/yupik_ipa_fws.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/yupik_ipa_fws.elf \
-    vendor/samsung/gts7fewifi/proprietary/vendor/firmware/yupik_ipa_fws.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/yupik_ipa_fws.mdt \
+    vendor/samsung/gts7fewifi/proprietary/vendor/firmware/wlan/rev2/wpss.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/rev2/wpss.b00 \
+    vendor/samsung/gts7fewifi/proprietary/vendor/firmware/wlan/rev2/wpss.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/rev2/wpss.b01 \
+    vendor/samsung/gts7fewifi/proprietary/vendor/firmware/wlan/rev2/wpss.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/rev2/wpss.b02 \
+    vendor/samsung/gts7fewifi/proprietary/vendor/firmware/wlan/rev2/wpss.b03:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/rev2/wpss.b03 \
+    vendor/samsung/gts7fewifi/proprietary/vendor/firmware/wlan/rev2/wpss.b04:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/rev2/wpss.b04 \
+    vendor/samsung/gts7fewifi/proprietary/vendor/firmware/wlan/rev2/wpss.b05:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/rev2/wpss.b05 \
+    vendor/samsung/gts7fewifi/proprietary/vendor/firmware/wlan/rev2/wpss.b06:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/rev2/wpss.b06 \
+    vendor/samsung/gts7fewifi/proprietary/vendor/firmware/wlan/rev2/wpss.b07:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/rev2/wpss.b07 \
+    vendor/samsung/gts7fewifi/proprietary/vendor/firmware/wlan/rev2/wpss.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/rev2/wpss.mdt \
+    vendor/samsung/gts7fewifi/proprietary/vendor/firmware/wlan/rev3/wpss.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/rev3/wpss.b01 \
+    vendor/samsung/gts7fewifi/proprietary/vendor/firmware/wlan/rev3/wpss.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/rev3/wpss.mdt \
+    vendor/samsung/gts7fewifi/proprietary/vendor/firmware/wlan/rev4/wpss.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/rev4/wpss.b00 \
+    vendor/samsung/gts7fewifi/proprietary/vendor/firmware/wlan/rev4/wpss.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/rev4/wpss.b01 \
+    vendor/samsung/gts7fewifi/proprietary/vendor/firmware/wlan/rev4/wpss.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/rev4/wpss.b02 \
+    vendor/samsung/gts7fewifi/proprietary/vendor/firmware/wlan/rev4/wpss.b03:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/rev4/wpss.b03 \
+    vendor/samsung/gts7fewifi/proprietary/vendor/firmware/wlan/rev4/wpss.b04:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/rev4/wpss.b04 \
+    vendor/samsung/gts7fewifi/proprietary/vendor/firmware/wlan/rev4/wpss.b05:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/rev4/wpss.b05 \
+    vendor/samsung/gts7fewifi/proprietary/vendor/firmware/wlan/rev4/wpss.b06:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/rev4/wpss.b06 \
+    vendor/samsung/gts7fewifi/proprietary/vendor/firmware/wlan/rev4/wpss.b07:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/rev4/wpss.b07 \
+    vendor/samsung/gts7fewifi/proprietary/vendor/firmware/wlan/rev4/wpss.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/rev4/wpss.mdt \
+    vendor/samsung/gts7fewifi/proprietary/vendor/firmware/wlan/rev5/wpss.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/rev5/wpss.b00 \
+    vendor/samsung/gts7fewifi/proprietary/vendor/firmware/wlan/rev5/wpss.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/rev5/wpss.b01 \
+    vendor/samsung/gts7fewifi/proprietary/vendor/firmware/wlan/rev5/wpss.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/rev5/wpss.b02 \
+    vendor/samsung/gts7fewifi/proprietary/vendor/firmware/wlan/rev5/wpss.b03:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/rev5/wpss.b03 \
+    vendor/samsung/gts7fewifi/proprietary/vendor/firmware/wlan/rev5/wpss.b04:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/rev5/wpss.b04 \
+    vendor/samsung/gts7fewifi/proprietary/vendor/firmware/wlan/rev5/wpss.b05:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/rev5/wpss.b05 \
+    vendor/samsung/gts7fewifi/proprietary/vendor/firmware/wlan/rev5/wpss.b06:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/rev5/wpss.b06 \
+    vendor/samsung/gts7fewifi/proprietary/vendor/firmware/wlan/rev5/wpss.b07:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/rev5/wpss.b07 \
+    vendor/samsung/gts7fewifi/proprietary/vendor/firmware/wlan/rev5/wpss.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/rev5/wpss.mdt \
+    vendor/samsung/gts7fewifi/proprietary/vendor/firmware/wlan/rev6/wpss.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/rev6/wpss.b00 \
+    vendor/samsung/gts7fewifi/proprietary/vendor/firmware/wlan/rev6/wpss.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/rev6/wpss.b01 \
+    vendor/samsung/gts7fewifi/proprietary/vendor/firmware/wlan/rev6/wpss.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/rev6/wpss.b02 \
+    vendor/samsung/gts7fewifi/proprietary/vendor/firmware/wlan/rev6/wpss.b03:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/rev6/wpss.b03 \
+    vendor/samsung/gts7fewifi/proprietary/vendor/firmware/wlan/rev6/wpss.b04:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/rev6/wpss.b04 \
+    vendor/samsung/gts7fewifi/proprietary/vendor/firmware/wlan/rev6/wpss.b05:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/rev6/wpss.b05 \
+    vendor/samsung/gts7fewifi/proprietary/vendor/firmware/wlan/rev6/wpss.b07:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/rev6/wpss.b07 \
+    vendor/samsung/gts7fewifi/proprietary/vendor/firmware/wlan/rev6/wpss.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/rev6/wpss.mdt \
+    vendor/samsung/gts7fewifi/proprietary/vendor/firmware/wlan/rev7/wpss.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/rev7/wpss.b01 \
+    vendor/samsung/gts7fewifi/proprietary/vendor/firmware/wlan/rev7/wpss.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/rev7/wpss.mdt \
+    vendor/samsung/gts7fewifi/proprietary/vendor/firmware/wlan/rev8/wpss.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/rev8/wpss.b00 \
+    vendor/samsung/gts7fewifi/proprietary/vendor/firmware/wlan/rev8/wpss.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/rev8/wpss.b01 \
+    vendor/samsung/gts7fewifi/proprietary/vendor/firmware/wlan/rev8/wpss.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/rev8/wpss.b02 \
+    vendor/samsung/gts7fewifi/proprietary/vendor/firmware/wlan/rev8/wpss.b03:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/rev8/wpss.b03 \
+    vendor/samsung/gts7fewifi/proprietary/vendor/firmware/wlan/rev8/wpss.b04:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/rev8/wpss.b04 \
+    vendor/samsung/gts7fewifi/proprietary/vendor/firmware/wlan/rev8/wpss.b05:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/rev8/wpss.b05 \
+    vendor/samsung/gts7fewifi/proprietary/vendor/firmware/wlan/rev8/wpss.b07:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/rev8/wpss.b07 \
+    vendor/samsung/gts7fewifi/proprietary/vendor/firmware/wlan/rev8/wpss.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/rev8/wpss.mdt \
     vendor/samsung/gts7fewifi/proprietary/vendor/lib/camera/com.qti.tuned.default.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.tuned.default.bin \
     vendor/samsung/gts7fewifi/proprietary/vendor/lib/camera/com.samsung.sensormodule.0_0_sony_imx355.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.samsung.sensormodule.0_0_sony_imx355.bin \
     vendor/samsung/gts7fewifi/proprietary/vendor/lib/camera/com.samsung.sensormodule.13_lsi_gc5035.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.samsung.sensormodule.13_lsi_gc5035.bin \
